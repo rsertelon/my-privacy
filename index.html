@@ -30,7 +30,7 @@
     <link rel="shortcut icon" href="/assets/ico/favicon.ico">
   </head>
 
-  <body>
+  <body data-spy="scroll" data-target=".navbar">
 
     <div class="navbar navbar-fixed-top">
       <div class="navbar-inner">
@@ -54,47 +54,55 @@
 
     <div class="container">
 
-      <div class="page-header">
-        <h1>Why should you be concerned about your privacy?</h1><a name="your-privacy"></a>
-      </div>
-      <div class="row">
-        <div class="span3 offset1">
-          <img src="/assets/img/fingerprint.png" alt="Human Rights" />
+      <section id="your-privacy">
+        <div class="page-header">
+          <h1>Why should you be concerned about your privacy?</h1>
         </div>
-        <div class="span6">
-          <h2>You are tracked, and analyzed on the web</h2>
-          <p>Every time you visit a website with ads, cookies are stored on your computer. Cookies are not evil, they are mandatory for maintaining user sessions open (as of today). But what advertising companies can do with them could be somehow dangerous.</p>
-          <p>With one cookie, anouncers can know what website you've been on, so they can create a profile corresponding to your likes and dislikes. With this information, they can show you advertisements that you might find interesting. All this data is kept jealously by ads companies and sold to their customers: you are the product.</p>
-          <h2>What if your data is sold to governments?</h2>
-          <p>This sounds far-fetched, and you probably feel that this is a strange question. Shouldn't you trust your government? There already exist several laws that track users for the sake of "anti-terrorism" and "anti-piracy". These laws allow governments to spy on you, they could also buy information to private companies...</p>
-          <p>Your Internet privacy is really important. (This is why, even if I have nothing to hide, I chose to <a href="http://blog.bluepyth.fr/en/2012/09/26/leaving-google/">leave Google services</a>)</p>
-          <p>This can also be dangerous for Human Rights, as in every country, dissidents can be persecuted for just not agreeing on some topics...</p>
+        <div class="row">
+          <div class="span3 offset1">
+            <img src="/assets/img/fingerprint.png" alt="Human Rights" />
+          </div>
+          <div class="span6">
+            <h2>You are tracked, and analyzed on the web</h2>
+            <p>Every time you visit a website with ads, cookies are stored on your computer. Cookies are not evil, they are mandatory for maintaining user sessions open (as of today). But what advertising companies can do with them could be somehow dangerous.</p>
+            <p>With one cookie, anouncers can know what website you've been on, so they can create a profile corresponding to your likes and dislikes. With this information, they can show you advertisements that you might find interesting. All this data is kept jealously by ads companies and sold to their customers: you are the product.</p>
+            <h2>What if your data is sold to governments?</h2>
+            <p>This sounds far-fetched, and you probably feel that this is a strange question. Shouldn't you trust your government? There already exist several laws that track users for the sake of "anti-terrorism" and "anti-piracy". These laws allow governments to spy on you, they could also buy information to private companies...</p>
+            <p>Your Internet privacy is really important. (This is why, even if I have nothing to hide, I chose to <a href="http://blog.bluepyth.fr/en/2012/09/26/leaving-google/">leave Google services</a>)</p>
+            <p>This can also be dangerous for Human Rights, as in every country, dissidents can be persecuted for just not agreeing on some topics...</p>
+          </div>
         </div>
-      </div>
-      <div class="page-header">
-        <h1>How your privacy is affected on my websites</h1><a name="information"></a>
-      </div>
-      <div class="row">
-        <div class="span6 offset1">
-          <h2>There are no advertisements</h2>
-          <p>This will prevent you from being tracked through my websites. Also, I don't plan to earn money with these small websites :)</p>
-          <h2>I use my own analytics software</h2>
-          <p>For as long as I hosted websites, I used analytics to see how many visitors came to my websites, where they were from and so on.</p>
-          <p>Google Analytics is a great software, but all the data belongs to them, so I searched for a self-hosted solution, and I found <a href="http://piwik.org">Piwik</a>. So your data is stored on my server, and I could delete it if you wanted me to.</p>
+      </section>
+
+      <section id="information">
+        <div class="page-header">
+          <h1>How your privacy is affected on my websites</h1>
         </div>
-        <div class="span3" style="margin-top:65px">
-          <img src="/assets/img/piwik.png" alt="Piwik logo">
+        <div class="row">
+          <div class="span6 offset1">
+            <h2>There are no advertisements</h2>
+            <p>This will prevent you from being tracked through my websites. Also, I don't plan to earn money with these small websites :)</p>
+            <h2>I use my own analytics software</h2>
+            <p>For as long as I hosted websites, I used analytics to see how many visitors came to my websites, where they were from and so on.</p>
+            <p>Google Analytics is a great software, but all the data belongs to them, so I searched for a self-hosted solution, and I found <a href="http://piwik.org">Piwik</a>. So your data is stored on my server, and I could delete it if you wanted me to.</p>
+          </div>
+          <div class="span3" style="margin-top:65px">
+            <img src="/assets/img/piwik.png" alt="Piwik logo">
+          </div>
         </div>
-      </div>
-      <div class="page-header">
-        <h1>Opt-Out from my analytics</h1><a name="opt-out"></a>
-      </div>
-      <div class="row">
-        <div class="span9 offset1">
-          <p>To protect your privacy even further, you can opt-out from my analytics software (or opt-in again) by clicking on the following link:</p>
-          <iframe style="background-color:#757C82" class="span8" frameborder="no" src="https://analytics.bluepyth.fr/index.php?module=CoreAdminHome&amp;action=optOut&amp;language=en"></iframe>
+      </section>
+
+      <section id="opt-out">
+        <div class="page-header">
+          <h1>Opt-Out from my analytics</h1>
         </div>
-      </div>
+        <div class="row">
+          <div class="span9 offset1">
+            <p>To protect your privacy even further, you can opt-out from my analytics software (or opt-in again) by clicking on the following link:</p>
+            <iframe style="background-color:#757C82" class="span8" frameborder="no" src="https://analytics.bluepyth.fr/index.php?module=CoreAdminHome&amp;action=optOut&amp;language=en"></iframe>
+          </div>
+        </div>
+      </section>
     </div> <!-- /container -->
 
     <!-- Le javascript
@@ -102,6 +110,7 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="/assets/js/jquery.min.js"></script>
     <script src="/assets/js/bootstrap.min.js"></script>
+    <script src="/assets/js/bootstrap-scrollspy.js"></script>
     <!-- Piwik --> 
     <script type="text/javascript">
       var pkBaseURL = (("https:" == document.location.protocol) ? "https://analytics.bluepyth.fr/" : "http://analytics.bluepyth.fr/");
